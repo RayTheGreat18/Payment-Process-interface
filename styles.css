@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background-color: #007bff;
+    color: #007bff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* everything is layed out according to the HTML page */
+.container {
+    background-color: #fff;
+    overflow-x: hidden;
+    border-radius: 0.312em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1);
+    padding: 1.25em;
+    text-align: center;
+}
+
+.add-amount-dollar {
+    text-align: left;
+    padding-left: 0;
+}
+
+#conversion-btn {
+    background-color: #007bff;
+    color: white;
+    margin-top: 0.625em;
+    padding: 0.625em;
+    border-radius: 0.312em;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    max-width: 16.875em;
+}
+
+.out-put {
+    height: 1.625em;
+    max-width: 18.237em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.312em;
+    margin-top: 0.937em;
+    padding-top: 0.625em;
+}
+
+.payment-form label {
+    display: block;
+    margin-top: 0.625em;
+    text-align: left;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 0.625em;
+    margin-top: 0.312em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.312em;
+}
+
+#pay-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.625em 20px;
+    border-radius: 0.312em;
+    cursor: pointer;
+    margin-top: 0.625em;
+}
+
+#pay-button:hover,#conversion-btn:hover {
+    background-color: #0056b3;
+}
+
+/* everything to do with the modal */
+.modal {
+    /* display is set to none as it will be turned on in javascript */
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 26.25em;
+    width: 21.875em;
+    border-radius: 0.312em;
+    box-shadow: 0px 0px 0.375em 0.125em #666;
+    background-color: #212529;
+    color: whitesmoke;
+}
+
+.close-modal-btn-container{
+    text-align: right;
+    margin: 0.5625em;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+    color: red;
+    cursor: pointer;
+}
+
+.modal-close-btn {
+    font-size: 1.375em;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0.0625em solid transparent;
+    color: whitesmoke;
+  }
+
+span {
+    margin-top: 5em;
+}  
+
+ul li {
+    list-style: none;
+}
+
+#modal-btn {
+    display: block;
+    background-color: whitesmoke;
+    margin-left: 8.3125em;
+    margin-top: 2.5em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.312em;
+}
